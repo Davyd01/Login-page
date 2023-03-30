@@ -1,24 +1,9 @@
 @font-face {
-    font-family: 'Prompt';
-    src: url('../fonts/Prompt-ExtraBoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Asap Condensed';
-    src: url('../fonts/AsapCondensed-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
+    src: url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
     font-display: swap;
 }
 * {
