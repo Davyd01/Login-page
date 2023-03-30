@@ -1,0 +1,123 @@
+@import url('reset.css');
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 29px;
+}
+.wrapper {
+    background: url(../img/bg.png) no-repeat 50%/ cover; 
+    min-height: 100vh;
+    /* position: absolute; */
+    /* max-width: 1240px; */
+}
+.container {
+    width: 496px;
+    margin: 0 0 0 auto;
+    padding: 60px 0;
+    background: rgba(233, 233, 233, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.main {
+    width: 340px;
+    margin: 0  auto;
+}
+.switch {
+    margin-bottom: 75px;
+}
+.switch input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.switch input + label {
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 36px ;
+    border: 1px solid black;
+    border-radius: 100px;
+    /* background: green; */
+    cursor: pointer;
+    position: relative;
+    transition: all .5s linear;
+    
+}
+.switch input + label::before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 2px;
+    width: 50%;
+    height: 31px;
+    background: #153416;
+    border-radius: 100px;
+    transition: all .5s linear;
+}
+.switch input:checked  + label{
+    /* background: #fff; */
+}
+.switch input:checked  + label::before {
+    background: #153416;
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+.switch input + label span{
+    color: #fff;
+    flex: 0 0 50%;
+    position: relative;
+}
+.cells {
+    margin-bottom: 20px;
+}
+.cells input {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    background: #929191;
+    border: .1px solid #929191;
+    padding-left: 20px;
+}
+.cells input::placeholder {
+    color:#fff;
+    opacity: 1;
+}
+.cells input:active {
+    border: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.remember_forgot a{
+    display: block;
+    color: #153416;
+}
+.remember_forgot input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.remember_forgot input + label {
+    /* margin: 0 0 0 30px; */
+    padding: 5px 5px 5px 29px;
+    display: inline-block;
+    position: relative;
+}
+.remember_forgot input + label::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+}
